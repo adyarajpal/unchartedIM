@@ -7,6 +7,7 @@ import markdown2
 import yfinance as yf
 import time  # <-- For measuring timing
 
+## put in peer companies 
 # Optional: Set page config
 st.set_page_config(
     page_title="Investment Memorandum Generator",
@@ -21,7 +22,6 @@ def load_image_as_base64(image_path: str) -> str:
         encoded_string = base64.b64encode(img_file.read()).decode()
     return encoded_string
 
-# ----- DARK THEME & STYLING -----
 st.markdown(
     """
     <style>
@@ -78,7 +78,6 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-# ----- USER INPUT FIELDS -----
 company_name = st.text_input("Company Name (e.g. Apple Inc.)", "")
 ticker_symbol = st.text_input("Ticker Symbol (e.g. AAPL, TSLA)", "")
 details = st.text_area("Additional Details", "")

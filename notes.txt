@@ -1,0 +1,8 @@
+put in peer companies (preselected by user)
+very important 
+
+put chunking in for each section, create multiple gpt api calls for each of the 7 sections, so then combine at the end to make a much longer IM. 
+Need to consider conflicting claims / data, do one check at the end with the whole IM as input and ask for any conflicts. 
+"you are a domain expert focused on detailing competitive advatnages and risks for {company_name} --> do this for each section 
+
+Create a features to upload documents as well, and figure out how to match that into the prompt. 
